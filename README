@@ -1,4 +1,15 @@
-EpicFlow, v1.00
+## modified in this repo:
+
+A cmake install to build the epic library. To make: 
+
+```
+mkdir build
+cd build
+cmake ..
+make -j2
+```
+
+# EpicFlow, v1.00 (Revaud)
 
 Our code is mentioned only for scientific or personal use.
 Please contact us for commercial use.
