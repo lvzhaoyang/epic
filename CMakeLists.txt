@@ -18,7 +18,7 @@ file(GLOB HEADERS "cpp/*.hpp" "cpp/*.h")
 file(GLOB FILES "cpp/*.cpp" "cpp/*.c")
 
 add_library(epic SHARED ${HEADERS} ${FILES})
-target_link_libraries(epic png jpeg lapack ${PNG_LIBRARY})
+target_link_libraries(epic ${PNG_LIBRARY} jpeg lapack)
 
 file(GLOB exes "epicflow.cpp")
 foreach(exe IN ITEMS ${exes})
