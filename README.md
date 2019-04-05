@@ -1,11 +1,11 @@
-#EpicFlow
+# EpicFlow
 
 This repository is a modified version of Revaud's EpicFlow (Dec 2014: v1.00) algorithm. 
 
 This code is mentioned only for scientific or personal use.
 Please contact Revaud for any algorithm related questions.
 
-### Compiling using CMake:
+### Compiling using CMake (The only part added by Zhaoyang):
 
 Libraries libpng16, libjpg, libm and liblapack are required. 
 To build epicflow:
@@ -17,7 +17,7 @@ cmake ..
 make -j2
 ```
 
-###Prerequisities
+### Prerequisities
 
 Given two images, you need first to compute edges and matches before running EpicFlow.
 You can download the code from these links.
@@ -28,7 +28,7 @@ You can download the code from these links.
 Note that we initially use the first version of SED, whose results are computed using the corresponding model 'modelFinal.mat'. 
 More recent versions give similar performance.
 
-###Usage
+### Usage
 
 EpicFlow creates a .flo file in an usual .flo format
 (for instance, see Middlebury dataset for code reading/displaying it). 
@@ -57,7 +57,7 @@ Use C
 ./epicflow <im1name> <im2name> <edgefile> <matchfile> <outputfile> [options]
 ```
 
-###Citation
+### Citation
 
 If you use our code, please cite our paper:
 
